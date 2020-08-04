@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 
-#page-create-point-point header a {
+#page-create-point header a {
     color: var(--title-color);
     font-weight: bold;
     display: flex;
@@ -25,7 +25,6 @@
     display: flex;
     width: 20px;
     height: 24px;
-font-size: 24px;
 }
 
 form {
@@ -60,7 +59,7 @@ form h2 {
 
 form legend span {
 font-size: 14px;
-color: #34bc79;
+color: var(--title-color);
 }
 
 form .field {
