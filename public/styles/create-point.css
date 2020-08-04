@@ -1,30 +1,31 @@
-#create-point {
+#page-create-point {
     width: 90%;
     max-width: 1100px;
     /*alinhamento de caixa peo lado de fora   */
     margin: 0 auto;
 }
 
-#create-point header {
+#page-create-point header {
     margin-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#create-point header a {
+#page-create-point-point header a {
     color: var(--title-color);
     font-weight: bold;
     display: flex;
     align-items: center;
 }
 
-#create-point header a span {
-    margin-right: 10px;
+#page-create-point header a span {
+    margin-right: 16px;
     background-image: url(/assets/arrow-left.svg);
     display: flex;
     width: 20px;
     height: 24px;
+font-size: 24px;
 }
 
 form {
@@ -47,10 +48,19 @@ form fieldset {
 
 form legend {
     margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
 }
 
 form h2 {
     font-size: 24px;
+}
+
+form legend span {
+font-size: 14px;
+color: #34bc79;
 }
 
 form .field {

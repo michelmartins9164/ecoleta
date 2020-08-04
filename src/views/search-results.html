@@ -1,36 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado da pesquisa</title>
+{% set pageId = "page-search-results" %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+{% block title %}
+<title>Resultado da pesquisa</title>
+{% endblock title %}
 
-    <link rel="stylesheet" href="/styles/main.css">
+{% block styles %}
     <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
 
-    <link rel="stylesheet " href="/styles/responsive.css ">
-
-</head>
-
-<body>
-    <div id="page-search-results">
-        <header>
-            <a href="/index.html"> <img src="/assets/logo.svg " alt="logomarca ">
-                <a href="/index.html">
-                    <span></span> Voltar para home </a>
-            </a>
-        </header>
+{% block content %}
+        {% include "partials/page-header.html" %}
 
         <main>
             <h3>
-                <strong>2 pontos </strong>encontrados
+                <strong>2 pontos </strong> encontrados
             </h3>
             <div class="cards">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Colectoria">
+                    <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="Colectoria">
                     <h1>Colectoria</h1>
                     <h3> Resíduos Eletrônicos, Lâmpadas </h3>
                     <p>
@@ -39,7 +29,8 @@
                     </p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Papersider">
+                    <img src="https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="Papersider">
                     <h1>Papersider</h1>
                     <h3>Papéis e Papelão</h3>
                     <p>
@@ -51,9 +42,4 @@
     </div>
 
     </main>
-
-    </div>
-
-</body>
-
-</html>
+{% endblock content %}
