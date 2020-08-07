@@ -8,7 +8,6 @@ function populateUFs() {
             for (const state of states) {
                 ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
             }
-
         })
 }
 
